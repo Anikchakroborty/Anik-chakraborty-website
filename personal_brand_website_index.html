@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>আপনার নাম — অফিসিয়াল সাইট</title>
+  <meta name="description" content="[আপনার নাম] — অফিসিয়াল অফিসিয়াল প্রোফাইল, আপডেট, প্রোডাক্ট ও সেল।">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yourname.example/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="[আপনার নাম] — অফিসিয়াল সাইট">
+  <meta property="og:description" content="অফিসিয়াল প্রোফাইল, প্রোডাক্ট ও সেল">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourname.example/">
+  <meta property="og:image" content="https://yourname.example/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "[আপনার নাম]",
+    "url": "https://yourname.example/",
+    "sameAs": [
+      "https://www.facebook.com/yourprofile",
+      "https://www.linkedin.com/in/yourprofile",
+      "https://www.instagram.com/yourprofile"
+    ],
+    "jobTitle": "[আপনার পেশা]",
+    "email":"mailto:you@example.com"
+  }
+  </script>
+
+  <style>
+    :root{--max:1100px;font-family:Inter,system-ui,Arial,"Noto Sans Bengali",sans-serif}
+    body{margin:0;background:#f7f7fb;color:#0b1220;display:flex;justify-content:center}
+    .wrap{max-width:var(--max);width:100%;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:86px;height:86px;border-radius:14px;background:#ddd}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 18px;color:#444}
+    nav a{margin-right:12px;text-decoration:none;color:#0b66d0}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:880px){.grid{grid-template-columns:2fr 1fr}}
+
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(11,18,32,0.06)}
+    .products{display:grid;grid-template-columns:repeat(1,1fr);gap:12px}
+    @media(min-width:560px){.products{grid-template-columns:repeat(2,1fr)}}
+
+    .product{display:flex;gap:12px;align-items:center}
+    .product img{width:84px;height:84px;border-radius:8px;object-fit:cover}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;background:#0b66d0;color:#fff}
+    footer{margin-top:18px;color:#666;font-size:13px}
+
+    /* small util */
+    .muted{color:#666;font-size:13px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="avatar" id="avatar" aria-hidden="true"></div>
+      <div>
+        <h1 id="site-name">[আপনার নাম]</h1>
+        <p class="lead" id="tagline">[পার্সোনাল ট্যাগলাইন — উদাহরণ: ডিজিটাল ক্রিয়েটর, উদ্যোক্তা]</p>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="grid" style="margin-top:18px;">
+      <div>
+        <article class="card" id="about">
+          <h2>অফিসিয়াল প্রোফাইল</h2>
+          <p id="bio">সংক্ষিপ্ত পরিচিতি, ক্যারিয়ার, কৃতিত্ব। এখানে নিয়মিত ব্লগ/নোটস রাখুন — Google-এ র‍্যাংক করার জন্য কন্টেন্ট নিয়মিত আপডেট করা দরকার।</p>
+          <h3 style="margin-top:12px">সেবা/কাজের তালিকা</h3>
+          <ul id="services">
+            <li>সেবা ১</li>
+            <li>সেবা ২</li>
+            <li>কস্টম প্রোডাক্ট / কনসালটিং</li>
+          </ul>
+        </article>
+
+        <article class="card" id="products" style="margin-top:12px">
+          <h2>প্রোডাক্ট ও সেল</h2>
+          <p>মধ্যে-মধ্যে প্রোমোশন চালিয়ে দিন — কুপন কোড, সীমিত সময়ের ছাড় ইত্যাদি।</p>
+
+          <div class="products" id="product-list">
+            <!-- Example product items (আপনি মার্কআপ পরিবর্তন করে বাস্তব ডেটা দিন) -->
+            <div class="card product" data-id="prod_1">
+              <img src="https://via.placeholder.com/300x300.png?text=Product+1" alt="Product 1">
+              <div>
+                <strong>প্রোডাক্ট ১</strong>
+                <div>সংক্ষিপ্ত বর্ণনা — দাম: ৳500</div>
+                <div style="margin-top:8px"><a class="btn" href="#" onclick="openCheckout(event,'prod_1')">Buy</a></div>
+              </div>
+            </div>
+
+            <div class="card product" data-id="prod_2">
+              <img src="https://via.placeholder.com/300x300.png?text=Product+2" alt="Product 2">
+              <div>
+                <strong>প্রোডাক্ট ২</strong>
+                <div>সংক্ষিপ্ত বর্ণনা — দাম: ৳1200</div>
+                <div style="margin-top:8px"><a class="btn" href="#" onclick="openCheckout(event,'prod_2')">Buy</a></div>
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Blog seed -->
+        <article class="card" style="margin-top:12px" id="blog">
+          <h2>ব্লগ (নতুন) — SEO জন্য গুরুত্বপূর্ণ</h2>
+          <p class="muted">নমুনা পোস্ট: "কিভাবে আমি X করেছি" — সাইটে নিয়মিত ২-৩টি উচ্চ-মানের পোস্ট দিন।</p>
+          <ul>
+            <li><a href="#post1">কেস স্টাডি: প্রজেক্ট X</a></li>
+            <li><a href="#post2">আপনি কিভাবে ব্যবসা বৃদ্ধি করবেন</a></li>
+          </ul>
+        </article>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>সামাজিক প্রোফাইল</h3>
+          <p>সরাসরি লিংকগুলো দিন — Facebook, LinkedIn, Instagram, YouTube</p>
+          <p id="social-links"><a href="#">Facebook</a><br><a href="#">LinkedIn</a></p>
+        </div>
+
+        <div class="card" style="margin-top:12px" id="contact">
+          <h3>যোগাযোগ</h3>
+          <form onsubmit="submitContact(event)">
+            <div><label>নাম<br><input name="name" required style="width:100%"></label></div>
+            <div style="margin-top:8px"><label>ইমেইল<br><input name="email" type="email" required style="width:100%"></label></div>
+            <div style="margin-top:8px"><label>মেসেজ<br><textarea name="msg" rows="4" style="width:100%"></textarea></label></div>
+            <div style="margin-top:8px"><button type="submit" class="btn">Send</button></div>
+          </form>
+          <p class="muted" style="margin-top:8px">(এটি ডেমো — ফর্ম সাবমিশন সার্ভার সেট করতে হবে। আমি সেটআপ করে দিতে পারি।)</p>
+        </div>
+
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> [আপনার নাম]. All rights reserved.
+    </footer>
+
+  </main>
+
+  <!-- Additional assets ready-to-deploy (place these in your repo root) -->
+  <!-- robots.txt -->
+  <!--
+  User-agent: *
+  Disallow:
+  Sitemap: https://yourname.example/sitemap.xml
+  -->
+
+  <!-- sitemap.xml (sample - include all important URLs) -->
+  <!--
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://yourname.example/</loc>
+      <priority>1.00</priority>
+    </url>
+    <url>
+      <loc>https://yourname.example/about</loc>
+      <priority>0.80</priority>
+    </url>
+    <url>
+      <loc>https://yourname.example/products</loc>
+      <priority>0.80</priority>
+    </url>
+  </urlset>
+  -->
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Lightweight checkout handler - replace with Stripe/PayPal
+    function openCheckout(e, id){
+      e.preventDefault();
+      // Map product ids to checkout url (replace with your real checkout links)
+      const map = {
+        'prod_1':'https://buy.stripe.com/test_prod1',
+        'prod_2':'https://buy.stripe.com/test_prod2'
+      };
+      const url = map[id] || '#';
+      if(url === '#'){
+        alert('Checkout URL not configured for '+id);
+      } else {
+        window.open(url,'_blank');
+      }
+    }
+
+    function submitContact(e){
+      e.preventDefault();
+      alert('ধন্যবাদ! আমরা শীঘ্রই যোগাযোগ করব। (এটি ডেমো — ফর্ম সাবমিশন সার্ভার সেট করতে হবে)');
+      e.target.reset();
+    }
+
+    // Example: small JS helper to prefill demo data (you can remove in production)
+    (function prefill(){
+      // replace placeholders automatically if you want quick preview
+      document.getElementById('site-name').textContent = 'Md. Example Name';
+      document.getElementById('tagline').textContent = 'ডিজিটাল ক্রিয়েটর • উদ্যোক্তা';
+      document.getElementById('bio').textContent = 'আমি Md. Example — ডিজিটাল প্রোডাক্ট নির্মাতা। এখানে আমার কাজ, প্রোডাক্ট ও যোগাযোগের লিংকগুলো পাবেন।';
+    })();
+  </script>
+
+  <!--
+  DEPLOYMENT CHECKLIST (আমি সব প্রিপার করেছি — ইফ ইউ ওয়ান্ট আমি ডেপ্লয় করবো যদি আপনি ক্রেডেনশিয়াল দেন):
+
+  1) ফাইলগুলো রেপো-রুটে রাখুন: index.html, robots.txt, sitemap.xml
+  2) হোস্টিং: Netlify / Vercel / GitHub Pages (free & fast)
+     - Netlify: new site > drag & drop the folder containing index.html
+     - Vercel: import repo from GitHub
+  3) ডোমেইন সেট করুন: আপনার ডোমেইন 'yourname.example' কিনে DNS-এ A/CNAME পয়েন্ট করুন
+  4) HTTPS: হোস্টিং প্ল্যাটফর্ম স্বয়ংক্রিয়ভাবে SSL দেয় (Netlify/Vercel)
+  5) Google Search Console: domain সম্পাদন করে verification করুন (DNS TXT recommended)
+  6) Sitemap: আপলোড করে Search Console -> Sitemaps এ https://yourname.example/sitemap.xml সাবমিট করুন
+  7) Analytics: GA4 ট্যাগ যোগ করুন (head তে GA4 script)
+  8) Payment: Stripe/PayPal ইনটিগ্রেট করুন — আপনার Stripe publishable key ব্যবহার করে Checkout sessions বানাব
+
+  OPTIONAL (আমি চাইলে করে দেব):
+   - Contact form backend (Firebase Function / Netlify Forms / Formspree)
+   - Stripe Checkout server integration (Node / Firebase function)
+   - Full deploy + DNS setup (I will need domain registrar & hosting panel access OR you can give collaborator invite on Netlify/Vercel)
+
+  SECURITY NOTE: সরাসরি ক্রেডেনশিয়াল চাওয়ার প্রয়োজন হলে আমি নিরাপদ উপায়ে নির্দেশ দিব — কখনই পাবলিক চ্যাটে পাসওয়ার্ড/সিক্রেট শেয়ার করবেন না।
+  -->
+
+</body>
+</html>
